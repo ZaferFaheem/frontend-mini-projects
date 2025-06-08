@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Widget</title>
+    <!-- YouTube.com/@ZaferFaheem -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="weather-widget">
+        <div class="weather-header">
+            <div class="sun-animation"></div>
+            <div class="cloud cloud-1"></div>
+            <div class="cloud cloud-2"></div>
+            <h1 class="location">New York</h1>
+            <p class="date">Monday, June 9, 2025</p>
+            <button class="refresh-btn" id="refreshBtn">
+                <i class="fas fa-sync-alt"></i>
+            </button>
+        </div>
+        <div class="weather-main">
+            <div class="weather-icon">
+                <img src="https://cdn-icons-png.flaticon.com/512/1163/1163661.png" alt="Weather Icon" id="weatherIcon">
+            </div>
+            <div class="temperature" id="temperature">24</div>
+            <p class="description" id="description">Partly Cloudy</p>
+        </div>
+        <div class="weather-details">
+            <div class="detail">
+                <div class="detail-icon">
+                    <i class="fas fa-tint"></i>
+                </div>
+                <div class="detail-value" id="humidity">65%</div>
+                <div class="detail-label">Humidity</div>
+            </div>
+            <div class="detail">
+                <div class="detail-icon">
+                    <i class="fas fa-wind"></i>
+                </div>
+                <div class="detail-value" id="wind">12 km/h</div>
+                <div class="detail-label">Wind</div>
+            </div>
+            <div class="detail">
+                <div class="detail-icon">
+                    <i class="fas fa-tachometer-alt"></i>
+                </div>
+                <div class="detail-value" id="pressure">1012 hPa</div>
+                <div class="detail-label">Pressure</div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
