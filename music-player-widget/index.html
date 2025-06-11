@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player Widget</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- YouTube.com/@ZaferFaheem -->
+</head>
+<body>
+    <div class="music-player">
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        
+        <button class="playlist-btn">
+            <i class="fas fa-list"></i>
+        </button>
+        
+        <div class="album-art">
+            <img src="https://images.unsplash.com/photo-1496293455970-f8581aae0e3b?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Album Art">
+        </div>
+        
+        <div class="song-info">
+            <h2 class="song-title">Blinding Lights</h2>
+            <p class="song-artist">The Weeknd</p>
+        </div>
+        
+        <div class="progress-container">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+            <div class="time-info">
+                <span class="current-time">0:00</span>
+                <span class="duration">3:20</span>
+            </div>
+        </div>
+        
+        <div class="controls">
+            <button class="control-btn prev-btn">
+                <i class="fas fa-step-backward"></i>
+            </button>
+            <button class="control-btn play-btn">
+                <i class="fas fa-play"></i>
+            </button>
+            <button class="control-btn next-btn">
+                <i class="fas fa-step-forward"></i>
+            </button>
+        </div>
+        
+        <div class="volume-container">
+            <i class="fas fa-volume-up volume-icon"></i>
+            <div class="volume-bar">
+                <div class="volume-progress"></div>
+            </div>
+        </div>
+        
+        <div class="playlist">
+            <h3>Playlist</h3>
+            <i class="fas fa-times close-playlist"></i>
+            
+            <div class="playlist-item active">
+                <img src="https://images.unsplash.com/photo-1496293455970-f8581aae0e3b?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Album Cover">
+                <div class="playlist-item-info">
+                    <div class="playlist-item-title">Blinding Lights</div>
+                    <div class="playlist-item-artist">The Weeknd</div>
+                </div>
+            </div>
+            
+            <div class="playlist-item">
+                <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Album Cover">
+                <div class="playlist-item-info">
+                    <div class="playlist-item-title">Save Your Tears</div>
+                    <div class="playlist-item-artist">The Weeknd</div>
+                </div>
+            </div>
+            
+            <div class="playlist-item">
+                <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Album Cover">
+                <div class="playlist-item-info">
+                    <div class="playlist-item-title">Levitating</div>
+                    <div class="playlist-item-artist">Dua Lipa</div>
+                </div>
+            </div>
+            
+            <div class="playlist-item">
+                <img src="https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Album Cover">
+                <div class="playlist-item-info">
+                    <div class="playlist-item-title">Stay</div>
+                    <div class="playlist-item-artist">The Kid LAROI, Justin Bieber</div>
+                </div>
+            </div>
+            
+            <div class="playlist-item">
+                <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Album Cover">
+                <div class="playlist-item-info">
+                    <div class="playlist-item-title">Don't Start Now</div>
+                    <div class="playlist-item-artist">Dua Lipa</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
