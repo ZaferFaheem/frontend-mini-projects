@@ -1,0 +1,239 @@
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #fafafa;
+    padding: 20px;
+}
+
+.instagram-post {
+    width: 100%;
+    max-width: 500px;
+    background: white;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    margin: 20px 0;
+}
+
+/* Post Header */
+.post-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 16px;
+    border-bottom: 1px solid #efefef;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.profile-pic {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-right: 12px;
+    object-fit: cover;
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+    padding: 2px;
+}
+
+.username {
+    font-weight: 600;
+    font-size: 14px;
+    color: #262626;
+}
+
+.location {
+    font-size: 12px;
+    color: #262626;
+}
+
+.more-options {
+    font-size: 18px;
+    cursor: pointer;
+    color: #262626;
+}
+
+/* Post Content */
+.post-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    background: linear-gradient(45deg, #8a2387, #e94057, #f27121);
+    aspect-ratio: 1/1;
+}
+
+/* Engagement Buttons */
+.engagement {
+    padding: 6px 16px 8px;
+    border-bottom: 1px solid #efefef;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 6px;
+}
+
+.left-buttons {
+    display: flex;
+    gap: 16px;
+}
+
+.btn {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 8px;
+    margin: -8px;
+}
+
+.like-btn {
+    color: #262626;
+}
+
+.like-btn.active {
+    color: #ed4956;
+}
+
+.comment-btn, .share-btn {
+    color: #262626;
+}
+
+.save-btn {
+    color: #262626;
+}
+
+.likes-count {
+    font-weight: 600;
+    font-size: 14px;
+    color: #262626;
+    margin-top: 4px;
+}
+
+/* Post Caption */
+.caption {
+    padding: 8px 16px;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.caption-user {
+    font-weight: 600;
+    color: #262626;
+    margin-right: 4px;
+}
+
+/* Comments Section */
+.comments {
+    padding: 0 16px;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.comment {
+    display: flex;
+    margin-bottom: 8px;
+}
+
+.comment-user {
+    font-weight: 600;
+    font-size: 14px;
+    color: #262626;
+    margin-right: 4px;
+}
+
+.comment-text {
+    font-size: 14px;
+    color: #262626;
+    flex: 1;
+}
+
+.comment-time {
+    font-size: 12px;
+    color: #8e8e8e;
+    margin-left: 16px;
+}
+
+.comment-like {
+    color: #8e8e8e;
+    font-size: 12px;
+    margin-left: 12px;
+}
+
+.view-comments {
+    color: #8e8e8e;
+    font-size: 14px;
+    margin: 4px 0 8px;
+    cursor: pointer;
+}
+
+.add-comment {
+    display: flex;
+    padding: 16px;
+    border-top: 1px solid #efefef;
+}
+
+.comment-input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    resize: none;
+    height: 18px;
+    max-height: 80px;
+    padding: 0;
+    color: #262626;
+}
+
+.comment-input::placeholder {
+    color: #8e8e8e;
+}
+
+.post-comment {
+    border: none;
+    background: none;
+    color: #0095f6;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    opacity: 0.3;
+}
+
+.post-comment.active {
+    opacity: 1;
+}
+
+/* Timestamp */
+.timestamp {
+    padding: 0 16px 16px;
+    color: #8e8e8e;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+    .instagram-post {
+        border: none;
+        box-shadow: none;
+    }
+    
+    body {
+        background-color: white;
+        padding: 0;
+    }
+}

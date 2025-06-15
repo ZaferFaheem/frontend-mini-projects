@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Post UI</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+     <!-- Youtube.com/@ZaferFaheem -->
+</head>
+<body>
+    <div class="instagram-post">
+        <!-- Post Header -->
+        <div class="post-header">
+            <div class="user-info">
+                <div class="profile-pic"></div>
+                <div>
+                    <div class="username">Zafer Faheem</div>
+                    <div class="location">Pakistan</div>
+                </div>
+            </div>
+            <div class="more-options">
+                <i class="fas fa-ellipsis-h"></i>
+            </div>
+        </div>
+        
+        <!-- Post Image -->
+        <div class="post-image"></div>
+        
+        <!-- Engagement Buttons -->
+        <div class="engagement">
+            <div class="buttons">
+                <div class="left-buttons">
+                    <button class="btn like-btn" id="likeButton">
+                        <i class="far fa-heart"></i>
+                    </button>
+                    <button class="btn comment-btn">
+                        <i class="far fa-comment"></i>
+                    </button>
+                    <button class="btn share-btn">
+                        <i class="far fa-paper-plane"></i>
+                    </button>
+                </div>
+                <button class="btn save-btn">
+                    <i class="far fa-bookmark"></i>
+                </button>
+            </div>
+            <div class="likes-count" id="likesCount">24,581 likes</div>
+        </div>
+        
+        <!-- Post Caption -->
+        <div class="caption">
+            <span class="caption-user">Zafer Faheem</span>
+            Sunset views in Santorini are simply magical! 😍🌅 Feeling grateful for this experience. #Travel #Santorini #Greece #SunsetLovers
+        </div>
+        
+        <!-- Comments Section -->
+        <div class="comments">
+            <div class="view-comments">View all 246 comments</div>
+            
+            <div class="comment">
+                <span class="comment-user">john_doe</span>
+                <span class="comment-text">Absolutely stunning! How long are you staying?</span>
+                <span class="comment-time">2h</span>
+                <span class="comment-like"><i class="far fa-heart"></i></span>
+            </div>
+            
+            <div class="comment">
+                <span class="comment-user">global_travels</span>
+                <span class="comment-text">This brings back memories! Best sunset spot in the world 🌎</span>
+                <span class="comment-time">1h</span>
+                <span class="comment-like"><i class="far fa-heart"></i></span>
+            </div>
+            
+            <div class="comment">
+                <span class="comment-user">Zafer Faheem</span>
+                <span class="comment-text">@john_doe One more week! Can't wait to explore more islands</span>
+                <span class="comment-time">45m</span>
+                <span class="comment-like"><i class="far fa-heart"></i></span>
+            </div>
+        </div>
+        
+        <!-- Timestamp -->
+        <div class="timestamp">3 hours ago</div>
+        
+        <!-- Add Comment -->
+        <div class="add-comment">
+            <textarea class="comment-input" placeholder="Add a comment..." id="commentInput"></textarea>
+            <button class="post-comment" id="postComment" disabled>Post</button>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
