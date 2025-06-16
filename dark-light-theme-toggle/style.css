@@ -1,0 +1,51 @@
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.toggle-checkbox
+{
+    display: none;
+}
+
+.toggle-bg
+{
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+    background: #ccc;
+    border-radius: 15px;
+    cursor: pointer;
+    position: relative;
+}
+.toggle-bg::before{
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 26px;
+    height: 26px;
+    background: #fff;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.toggle-checkbox:checked + .toggle-bg {
+    background: #2196F3 ;
+}
+
+.toggle-checkbox:checked + .toggle-bg::before {
+    transform: translateX(30px);
+}
