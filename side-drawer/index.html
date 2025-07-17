@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Right Side Drawer</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="profile-icon">
+            <i class="fas fa-user-circle"></i>
+        </div>
+    </header>
+    
+    <div class="side-drawer">
+        <button class="close-btn"><i class="fas fa-times"></i></button>
+        <div class="drawer-content">
+            <div class="profile-info">
+                <div class="profile-pic"><i class="fas fa-user-circle fa-3x"></i></div>
+                <h3>User Name</h3>
+                <p>user@example.com</p>
+            </div>
+            <div class="drawer-links">
+                <a href="#"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+                <a href="#"><i class="fas fa-cog"></i> Settings</a>
+                <a href="#"><i class="fas fa-question-circle"></i> Help</a>
+                <a href="#"><i class="fas fa-sign-out-alt"></i> Logout</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="overlay"></div>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
