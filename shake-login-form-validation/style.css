@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
 }
+
 body {
   font-family: Arial, sans-serif;
   background: #f1f1f1;
@@ -8,43 +9,81 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  margin: 0; /* Added to remove default margins */
 }
 
 .login-box {
   background: white;
   padding: 30px;
   border-radius: 10px;
-  box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
   width: 350px;
+  max-width: 90%; /* Added for responsiveness */
+  overflow: visible; /* Added to prevent clipping during shake */
 }
 
 .input-group {
   margin-bottom: 20px;
+  position: relative; /* Added for error message positioning */
 }
 
 .input-group input {
   width: 100%;
   padding: 10px;
+  border: 1px solid #ccc; /* Added border */
+  border-radius: 5px; /* Added rounding */
+  font-size: 16px; /* Added for consistency */
+  outline: none; /* Added to remove default outline */
+}
+
+.input-group input:focus {
+  border-color: #4285f4; /* Added focus state */
+}
+
+.input-group.valid input {
+  border-color: #4285f4; /* Added for valid input feedback */
+}
+
+.input-group.error input {
+  border-color: #dc3545; /* Added for error input feedback */
+}
+
+.error-message {
+  color: #dc3545; /* Added for error text */
+  font-size: 12px;
+  display: none; /* Hidden by default */
+  position: absolute;
+  bottom: -18px; /* Position below input */
+  left: 0;
+}
+
+.input-group.error .error-message {
+  display: block; /* Show when error class is added */
 }
 
 button {
   width: 100%;
-  padding: 10px;
+  padding: 12px; /* Increased padding slightly */
   background: #4285f4;
   color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  font-size: 16px; /* Added for consistency */
+  transition: background 0.3s; /* Added for smooth hover */
+}
+
+button:hover {
+  background: #3267d6; /* Added hover effect */
 }
 
 .shake {
-  animation: shake 0.3s;
+  animation: shake 0.3s ease-in-out; /* Updated for smoother animation */
+  display: block;
 }
 
 @keyframes shake {
-  0% {transform: translateX(0);}
-  25% {transform: translateX(-5px);}
-  50% {transform: translateX(5px);}
-  75% {transform: translateX(-5px);}
-  100% {transform: translateX(0);}
+  0%, 100% { transform: translateX(0); }
+  20%, 80% { transform: translateX(-12px); } /* Increased shake distance */
+  40%, 60% { transform: translateX(12px); }
 }
